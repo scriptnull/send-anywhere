@@ -1,6 +1,6 @@
 {
   "name": "send-anywhere",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A sweet layer on top of Send-Anywhere API to use it with node.js",
   "main": "index.js",
   "scripts": {
@@ -9,14 +9,14 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/scriptnull/send-anywhere.git"
-  } ,
+  },
   "keywords": [
     "send",
     "anywhere",
     "files",
     "receive"
   ],
-  "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)" ,
+  "author": "Vishnu Bharathi <vishnubharathi04@gmail.com> (https://twitter.com/scriptnull)",
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/scriptnull/send-anywhere/issues"
