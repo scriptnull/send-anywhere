@@ -38,7 +38,7 @@ module.exports = (function (API_KEY, PROFILE_NAME) {
 					var fileLink = JSON.parse(body).weblink;
 					request.get(fileLink, function (err, response, body) {
 						if (err) cb({ error: err, response: response }, null);
-						else cb(null, body);
+						else cb(null, body , response);
 					});
 				} else {
 					cb({ error: err, response: response }, null);

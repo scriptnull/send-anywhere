@@ -32,8 +32,9 @@ sa.sendFile('package.json' , function(err , details){
 
 ## receiveAsData(KEY , receivedCallback)
 ```javascript
-sa.receiveAsData(KEY ,function(err , data){
+sa.receiveAsData(KEY ,function(err , data , reponse){
   console.log(data);
+  console.log(response); //contains headers and other meta data
 });
 ```
 ## Error Handling
