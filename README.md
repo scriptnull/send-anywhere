@@ -9,7 +9,7 @@ npm install send-anywhere
 # API 
 
 ## Initialize SDK
-
+You can get the API key by requesting it from Send-Anywhere team.
 ```javascript
 var config = {
 	API_KEY  : "XXXXXXXXXXXXXXXXXXXXXXXX" ,
