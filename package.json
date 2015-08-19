@@ -20,5 +20,8 @@
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/scriptnull/send-anywhere/issues"
+  },
+  "dependencies": {
+    "request": "^2.61.0"
   }
 }
