@@ -7,6 +7,7 @@ module.exports.sendFile = function(API_KEY , PROFILE_NAME ,FILE_PATH , cb){
 	bridge.cookieInit(KEY_REQ_URL , function(cookie){
 		var keyGenOptions = bridge.getRequestOptionsWithCookie(SEND_URL , cookie );
 		request.get(keyGenOptions , function(err , response , body){
+			if(err) return cb({ error : err , response : response } , null );
 			if(response.statuseCode == 200){
 				var formData = {
 					file: fs.createReadStream(FILE_PATH)
@@ -14,7 +15,7 @@ module.exports.sendFile = function(API_KEY , PROFILE_NAME ,FILE_PATH , cb){
 				body = JSON.parse(body);
 				var sendUrl = body.weblink;
 				request.post({ url : sendUrl , formData :  formData} , function(err , response , body ){
-					if(err) return cb({ error : err , response : response } , null )
+					if(err) return cb({ error : err , response : response } , null );
 					else return cb(null , JSON.parse(body));
 				});
 			}else{
