@@ -25,7 +25,7 @@ module.exports.sendFile = function(API_KEY , PROFILE_NAME ,FILE_PATH , cb){
 	});
 };
 
-var bridge = (function(){
+var bridge = (function(request){
 	var cookieInit = function(KEY_REQ_URL , cb){
 		request
 			.get(KEY_REQ_URL)
@@ -46,4 +46,4 @@ var bridge = (function(){
 		cookieInit : cookieInit	,
 		getRequestOptionsWithCookie : getRequestOptionsWithCookie 
 	};
-})();
+})(request);
