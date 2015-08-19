@@ -1,0 +1,17 @@
+{
+  "name": "send-anywhere",
+  "version": "1.0.0",
+  "description": "A sweet layer for node.js apps on top of Send-Anywhere API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "send",
+    "anywhere",
+    "files",
+    "receive"
+  ],
+  "author": "",
+  "license": "GPL-3.0"
+}
