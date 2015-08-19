@@ -1,6 +1,6 @@
 {
   "name": "send-anywhere",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A sweet layer on top of Send-Anywhere API to use it with node.js",
   "main": "index.js",
   "scripts": {
